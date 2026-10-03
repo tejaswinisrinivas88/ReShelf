@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-rustic: 'Young Serif', 'Fraunces', Georgia, serif;
+    --font-serif: 'Young Serif', 'Fraunces', Georgia, serif;
+    --font-hand: 'Kalam', 'Caveat', cursive;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Autumn Meadow Palette */
+    --meadow-bg: #F8F3EA;
+    --meadow-parchment: #F1E5D3;
+    --meadow-kraft: #E4D2B8;
+    --meadow-pine: #233E2B;
+    --meadow-pine-dark: #1A3021;
+    --meadow-rust: #B8532A;
+    --meadow-rust-hover: #9E431E;
+    --meadow-gold: #E09F3E;
+    --meadow-amber: #D58A2B;
+    --meadow-sage: #606C38;
+    --meadow-soil: #342721;
+    --meadow-bark: #584539;
+    --meadow-border: #E0D3C1;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8F3EA;
+    color: #342721;
+  }
+
+  h1, h2, h3, h4, .font-serif, .font-rustic {
+    font-family: var(--font-rustic);
+    letter-spacing: -0.015em;
+  }
+}
+
+.font-rustic {
+  font-family: 'Young Serif', 'Fraunces', Georgia, serif;
+}
+
+.font-serif {
+  font-family: 'Young Serif', 'Fraunces', Georgia, serif;
+}
+
+.font-hand {
+  font-family: 'Kalam', 'Caveat', cursive;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Autumn Meadow custom styling */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Warm rustic scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F3EA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D9C8AF;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BFA788;
+}
